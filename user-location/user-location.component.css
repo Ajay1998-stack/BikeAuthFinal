@@ -1,0 +1,53 @@
+table {
+    width: 100%;
+}
+
+.logo-image {
+    background-image: url(../../bolt.svg);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+    outline: none;
+  }
+  
+.app-header {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}
+
+#writing {
+    margin-top: 20px;
+}
+
+.mat-elevation-z8 {
+    margin-top: 2em;
+}
+
+.container-fluid {
+    width: 60%;
+}
+
+.mat-elevation-z8 tr:hover {
+    background-color: rgb(172, 167, 169);
+}
+
+.mat-header-cell {
+    text-align: center;
+}
+
+.mat-cell {
+    text-align: center;
+}
+
+#action {
+    text-align: center;
+    margin-top: 6em;
+}

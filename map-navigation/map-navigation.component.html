@@ -1,0 +1,20 @@
+<!-- <p>map-navigation works!</p> -->
+<div id='map'></div>
+
+<div class="buttons-container">
+    <div *ngIf="rideStarted;then thenBlock;else elseBlock"></div>
+
+    <<ng-template #thenBlock>
+        <!-- <button class="trip-button" *ngIf="rideStarted" (click)="endTrip()" mat-button>End Trip</button> -->
+        <!-- <div *ngIf="isCharging;then endTripBlock"></div> -->
+        <ng-template *ngIf="isCharging;then endTripBlock"></ng-template>
+        <ng-template #endTripBlock>  
+            <a mat-raised-button (click)="endTrip()" color="accent" class="btn-block"><strong>End Trip</strong></a>
+        </ng-template> 
+    </ng-template>
+
+    <<ng-template #elseBlock>
+        <!-- <button class="trip-button" (click)="startTrip()" mat-button>Start Trip</button> -->
+        <a mat-raised-button (click)="startTrip()" color="accent" class="btn-block"><strong>Start Trip</strong></a>
+    </ng-template>
+</div>

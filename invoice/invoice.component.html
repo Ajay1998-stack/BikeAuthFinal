@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row">
+        <mat-toolbar color="accent" class="app-header">
+            <div class="logo-image" routerLink=""> </div>
+            <div id="writing">
+                <p><strong> BOLT TO YOUR DESTINATION </strong></p>
+            </div>
+        </mat-toolbar>
+    </div>
+</div> 
+
+<div class="invoice-container">
+    <mat-card class="card-center">
+        <mat-card-title><h2>BOLT Invoice</h2></mat-card-title>
+        <mat-card-content>Fare: {{fare}} Rupees</mat-card-content>
+        <mat-card-content>Travel Distance: {{travelDistance}} km</mat-card-content>
+        <mat-card-content>Travel Duration: {{travelDuration}} minutes</mat-card-content>
+        <mat-card-content>Start Station: {{startStation}}</mat-card-content>
+        <mat-card-content>End Station: {{endStation}}</mat-card-content>
+    </mat-card>
+
+    <a mat-stroked-button (click)="logOut()" color="accent" class="btn-block"><strong>SIGN OUT</strong></a>
+</div>
+

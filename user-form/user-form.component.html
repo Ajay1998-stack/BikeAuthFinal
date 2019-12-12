@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <mat-toolbar color="accent" class="app-header">
+            <div class="logo-image" routerLink=""> </div>
+            <div id="writing">
+                <p><strong> BOLT TO YOUR DESTINATION </strong></p>
+            </div>
+        </mat-toolbar>
+    </div>>
+</div>
+
+<div class="container-fluid">
+    <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+        <mat-card class="box">
+            <mat-card-header>
+                <mat-card-title>User Login</mat-card-title>
+            </mat-card-header>
+
+            <form class="example-form">
+
+                <mat-card-content>
+                    <mat-form-field class="example-full-width">
+                        <input type="text" matInput placeholder="Username" name="username" [(ngModel)]="username">
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <input type="password" matInput placeholder="Password" name="password" [(ngModel)]="password">
+                    </mat-form-field>
+
+                </mat-card-content>
+                <a mat-stroked-button (click)=userLogin() color="accent" class="btn-block"><strong>SIGN IN</strong></a>
+            </form>
+        </mat-card>
+    </div>
+</div>

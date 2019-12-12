@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row">
+        <mat-toolbar color="accent" class="app-header">
+            <div class="logo-image" routerLink=""> </div>
+            <div id="writing">
+                <p><strong> BOLT TO YOUR DESTINATION </strong></p>
+            </div>
+        </mat-toolbar>
+    </div>
+</div>
+
+<div id="action">
+    <h3>Select your current station</h3>
+</div>
+
+<div class="container-fluid" id="table-container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> <h5>Stations</h5> </th>
+            <td mat-cell *matCellDef="let station" (click)="getUserLocation(station.name, 
+                station.latitude, station.longitude)"> {{station.name}} </td>
+        </ng-container>        
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </table>
+</div>
